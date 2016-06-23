@@ -108,3 +108,87 @@ body {
 #master-series span {
   font-weight: bold;
 }
+
+
+
+/* SPINNER http://tobiasahlin.com/spinkit/ */
+#spinner {
+  position: relative;
+  top: -120px;
+  left: 60px;
+  margin: 100px auto 0;
+  width: 70px;
+  text-align: center;
+  display: none;
+}
+
+#spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+#spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+#spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+
+/* somewhat responsive */
+@media all and (max-width: 550px) {
+  #header {
+    height: 60px;
+    width: 100%;
+  }
+  #heading-main {
+    margin-left: 0px;
+  }
+  #heading-search {
+    margin-left: 10px;
+  }
+  #searchText {
+    width: 50px;
+  }
+
+  #master-list {
+    height: 45vh;
+    width: 100%;
+    overflow: scroll;
+  }
+  #master-detail {
+    position: relative;
+    height: 45vh;
+    width: 100%;
+    left: 0px;
+    top: 60px;
+    overflow: scroll;
+  }
+  #spinner {
+    top: -140px;
+  }
+}
