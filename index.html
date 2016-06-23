@@ -1,0 +1,39 @@
+<html lang="en" ng-app="Simlesa" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Marvel Explorer</title>
+    <meta name="description" content="A Marvel Explorer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="bower_components/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+  <div id="header">
+    <span id="heading-main">MARVEL</span>
+    <span id="heading-sub"> Explorer</span>
+    <span id="heading-search">
+      <span class="mdi mdi-magnify" id="searchFocus"></span>
+      <input type="text" id="searchText" placeholder="search..."/>
+    </span>
+  </div>
+
+  <div id="master-list">
+  </div>
+
+  <div id="master-detail">
+    Select a character...
+  </div>
+
+  <script src="bower_components/lodash/dist/lodash.js"></script>
+  <script src="bower_components/grapnel/dist/grapnel.min.js"></script>
+  <script src="libs/marmottajax.js"></script>
+  <script src="src/app.js"></script>
+
+</body>

@@ -1,0 +1,48 @@
+{
+  "name": "grapnel",
+  "version": "0.6.3",
+  "homepage": "https://github.com/bytecipher/grapnel",
+  "authors": [
+    "Greg Sabia Tucker <greg@bytecipher.io>"
+  ],
+  "description": "The smallest (1100 bytes gzipped!) JavaScript Router with PushState & Named Parameters",
+  "main": "dist/grapnel.min.js",
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "keywords": [
+    "grapnel",
+    "route",
+    "routing",
+    "router",
+    "server",
+    "express",
+    "hash",
+    "anchor",
+    "tiny",
+    "require",
+    "named parameters",
+    "backbone",
+    "routie",
+    "pushState"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0.6.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.6.3",
+    "commit": "9bbe442dc643ca3d381aaf952759b9117ef7745b"
+  },
+  "_source": "https://github.com/EngineeringMode/Grapnel.js.git",
+  "_target": "~0.6.3",
+  "_originalSource": "grapnel",
+  "_direct": true
+}

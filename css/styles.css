@@ -1,0 +1,110 @@
+
+body {
+  background-color: #505050;
+  height: 100vh;
+  width: 100vw;
+  padding: 0px;
+  margin: 0px;
+}
+
+#header {
+  background-color: #FFFFFF;
+  height: 60px;
+  width: 100%;
+  font-family: "Arial Black", Gadget, sans-serif;
+  vertical-align: bottom;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 99;
+}
+#heading-main {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  margin-left: 50px;
+  margin-top: 27px;
+  padding: 10px 5px 0px 5px;
+}
+#heading-sub {
+  display: inline-block;
+}
+#heading-search {
+  margin-left: 20px;
+}
+#searchText {
+  border: none;
+}
+
+#master-list {
+  background-color: #989898;
+  position: relative;
+  top: 60px;
+  width: 200px;
+  padding: 0px;
+}
+
+#master-list div {
+  box-sizing: border-box;
+  color: white;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+#master-list div:hover {
+  background-color: #888888;
+}
+
+#master-detail {
+  width: 500px;
+  background-color: white;
+  height: 70vh;
+  overflow: scroll;
+  position: fixed;
+  left: 210px;
+  top: 100px;
+  font-family: "Arial";
+}
+
+#master-heading {
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+}
+
+#master-icon {
+  float: right;
+  position: relative;
+  top: -20px;
+  margin: 5px;
+}
+#master-icon img {
+  border-radius: 40px;
+  width: 80px;
+  height: 80px;
+}
+
+#master-description {
+  padding: 5px;
+}
+
+#master-comics {
+  padding: 5px;
+  width: 195px;
+  float: left;
+}
+#master-comics span {
+  font-weight: bold;
+}
+
+#master-series {
+  padding: 5px;
+  width: 195px;
+  float: left;
+}
+#master-series span {
+  font-weight: bold;
+}

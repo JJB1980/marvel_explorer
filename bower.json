@@ -1,0 +1,21 @@
+{
+  "name": "marvel",
+  "version": "0.0.0",
+  "authors": [
+    "John Bowden <j.j.b1980@live.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "~4.13.1",
+    "router5": "~3.0.3",
+    "grapnel": "~0.6.3",
+    "mdi": "~1.6.50"
+  }
+}
