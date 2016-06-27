@@ -9,9 +9,6 @@
   };
 })();
 
-// hmm, data in global scope...
-var _json;
-
 // invoked from search text debounce
 function searchCharacters() {
   let searchText = document.getElementById('searchText');
@@ -36,12 +33,12 @@ function characters(search, id) {
   }).then(function(result) {
     // result
     spinner.style.display = 'none';
-    _json = JSON.parse(result);
+    let _json = JSON.parse(result);
     console.log(_json);
     buildMasterList(_json);
     console.log('display id: ', id);
     if (id)
-      findCharacter(id)
+      findCharacter(id, _json)
   }).error(function(message) {
     spinner.style.display = 'none';
     // message
@@ -91,15 +88,14 @@ function fillContent(result) {
 }
 
 // find a character by id, then display details.
-function findCharacter(id) {
-  let result = null; //_.find(_json.data.results, {id: id});
+function findCharacter(id, _json) {
+  let result = null; //_.find(_json.data.results, {id: id}); // lodash didn't work QQ
   for (let i = 0; i < _json.data.results.length; i++) {
     if (_json.data.results[i].id == id) {
       result = _json.data.results[i];
+      break;
     }
   }
-  // console.log(_json.data.results);
-  // console.log('found character: ', id, result);
   if (result)
     fillContent(result);
 }
